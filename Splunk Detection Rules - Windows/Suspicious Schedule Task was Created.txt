@@ -1,0 +1,1 @@
+source="WinEventLog:*" AND index="wineventlog" AND EventCode=4688 AND New_Process_Name="*\\schtasks.exe" AND (Process_Command_Line="*ONCE*" OR Process_Command_Line="*onstart*" OR Process_Command_Line="*onlogon*" OR Process_Command_Line="*onidle*" OR Process_Command_Line="*create*" OR Process_Command_Line="*SYSTEM*")
