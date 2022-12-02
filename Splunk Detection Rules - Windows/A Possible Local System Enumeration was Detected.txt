@@ -1,0 +1,1 @@
+source="WinEventLog:*" index="wineventlog" AND EventCode="4688" AND (Process_Command_Line=*systeminfo* OR Process_Command_Line=*quser* OR Process_Command_Line=*whoami* OR Process_Command_Line=*hostname*)
