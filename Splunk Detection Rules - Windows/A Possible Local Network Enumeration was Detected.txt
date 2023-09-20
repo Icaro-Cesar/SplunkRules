@@ -1,0 +1,1 @@
+source="WinEventLog:*" index="wineventlog" AND EventCode="4688" AND (Process_Command_Line=*netstat* OR Process_Command_Line=*ipconfig* OR Process_Command_Line=*route*)

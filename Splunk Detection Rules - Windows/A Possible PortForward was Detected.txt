@@ -1,0 +1,1 @@
+source="WinEventLog:*" index="wineventlog" AND EventCode="4688" AND New_Process_Name="C:\Windows\System32\netsh.exe" AND (Process_Command_Line=*listenport* OR Process_Command_Line=*connectport* OR Process_Command_Line=*connectaddress* OR Process_Command_Line=*portproxy* OR Process_Command_Line=*interface*)
